@@ -275,5 +275,15 @@ DXL_MODEL_TO_PARAMS = \
            'rpm_per_tick':       0.114,
            'features':           [DXL_CURRENT_L, DXL_TORQUE_CONTROL_MODE, DXL_GOAL_ACCELERATION]
          },
+    #Spring Model Electronics Co.Ltd SR518
+    524: { 'name':               'SR-518',
+           'encoder_resolution': 1024,
+           'range_degrees':      300.0,
+           'torque_per_volt':    1.8 / 12.0,                       #  1.8 NM @ 12V
+           'velocity_per_volt':  (62 * RPM_TO_RADSEC) / 12.0,      #  45 RPM @ 12.0V
+           'rpm_per_tick':       0.114, # no idea what is it
+           'features':           []
+          },
+
 }
 
